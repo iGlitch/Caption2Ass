@@ -1,0 +1,13 @@
+; Caption.def : DLL のモジュール パラメータを宣言します。
+
+LIBRARY      "Caption"
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます
+    InitializeCP    @1
+    UnInitializeCP  @2
+    AddTSPacketCP   @3
+    ClearCP         @4
+    GetTagInfoCP    @5
+    GetCaptionDataCP    @6
+    InitializeUNICODE   @7

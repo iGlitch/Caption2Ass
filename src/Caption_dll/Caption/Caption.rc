@@ -1,0 +1,40 @@
+#include <windows.h>
+#include <commctrl.h>
+#include <richedit.h>
+#include "resource.h"
+#include "../../config.h"
+
+//
+// Version Information resources
+//
+LANGUAGE LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN
+VS_VERSION_INFO VERSIONINFO
+    FILEVERSION     0,4,0,3
+    PRODUCTVERSION  0,4,0,3
+    FILEOS          VOS__WINDOWS32
+    FILETYPE        VFT_DLL
+    FILESUBTYPE     VFT2_UNKNOWN
+    FILEFLAGSMASK   0x00000017
+    FILEFLAGS       0x00000000
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "041104B0"
+        {
+            VALUE "FileDescription", "Caption"
+            VALUE "FileVersion", "0, 4, 0, 3"
+            VALUE "InternalName", "Caption.dll"
+            VALUE "LegalCopyright", "Glitch 2016"
+            VALUE "OriginalFilename", "Caption.dll"
+            VALUE "ProductName", "Caption"
+            VALUE "ProductVersion", "0, 4, 0, 3"
+#ifdef CAPTION_DLL_GIT_VERSION
+            VALUE "Comments", "ver." CAPTION_DLL_GIT_VERSION
+#endif
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0411, 0x04B0
+    }
+}
